@@ -1,0 +1,95 @@
+.text-filter{
+  .search-wrap{
+    margin-top: 20px;
+    border: 1px solid #aed2ec;
+    .search-condition{
+      background-color: #ecf3f8;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 20px;
+      color:#0076bd;
+    }
+    .search-b{
+      height:36px;
+      line-height: 36px;
+      padding: 0 20px;
+    }
+  }
+  .btn-search{
+    margin-left: 10px;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 34px;
+    i{
+      margin-left: 5px;
+      background-color: #bddaec;
+      color: #0076bd;
+      font-size: 10px;
+      padding: 1px 2px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+  }
+  .fix-btn(){
+    width: 44px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #0076bd;
+    border: 1px solid #e5e5e5;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    &:hover{
+      border: 1px solid transparent;
+      background-color: #0076bd;
+      color: #fff;
+    }
+  }
+
+    .btn-deal{
+      .fix-btn();
+      top: 50%;
+    }
+    .btn-compare{
+      .fix-btn();
+      top: calc(50% + 50px);
+    }
+  .back-top{
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    .fix-btn();
+    i{
+      font-size: 20px;
+    }
+  }
+  .bar(){
+    width: 82px;
+    height: 40px;
+    padding-left: 10px;
+    position: fixed;
+    background-color: #0076bd;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 3px 0 0 3px;
+    right: 43px;
+    padding-right: 5px;
+  }
+  .dealBar{
+   .bar();
+    top: 50%;
+  }
+  .compareBar{
+    .bar();
+     top: calc(50% + 50px);
+  }
+  .deal-enter{
+    transform: translateX(100px);
+  }
+  .deal-enter.deal-enter-active{
+    transition: all 0.5s ease-in;
+  }
+}
